@@ -16,7 +16,7 @@ pipeline{
 		}
 		stage("Git-Checkout"){
 			steps{
-				sudo su rm -rf *
+				sudo rm -rf *
 				git 'https://github.com/jidnyasactc/jidnyasacts-app.git'
 			}
 		}
