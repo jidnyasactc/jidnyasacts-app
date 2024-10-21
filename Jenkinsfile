@@ -1,7 +1,7 @@
 pipeline{
 	agent{
 		label{
-			label "build-in"
+			label "built-in"
 		}
 	}
 	stages{
@@ -16,7 +16,7 @@ pipeline{
 		}
 		stage("Git-Checkout"){
 			steps{
-				sudo rm -rf *
+				sh "sudo rm -rf *"
 				git 'https://github.com/jidnyasactc/jidnyasacts-app.git'
 			}
 		}
